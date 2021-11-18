@@ -1,10 +1,11 @@
 from flask import Flask, render_template , request , redirect, session  # Render_template(s) is a Method (or a function), Request is a property or a Attribute, Redirect is a Method (or a function), Session is a Attribute or a Property.
+from env import key
 
 
 app = Flask(__name__)
 
 
-app.secret_key = 'keep it secret, keep it safe'  # Meaningful random characters and numbers that help keep my Users information secure. Can also store them on another module to keep it more secure or to "bury it".
+app.secret_key = key  # Meaningful random characters and numbers that help keep my Users information secure. Can also store them on another module to keep it more secure or to "bury it".
 
 
 @app.route('/')
