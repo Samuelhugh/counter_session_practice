@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+    <h1>Number of Times the Client has Visited<h1>
+    <h3>{{ session['key'] }} Times</h3>
+    <a href="/clear"><button>Clear</button></a>
+    <a href="/add_two"><button>Add 2 to Session</button></a>
+    <a href="/reset"><button>Reset</button></a>
+
+    <form action="/submit_info" method="post">
+    <label for="f_name">First Name:</label>
+    <input type="text" name="f_name">
+    <label for="l_name">Last Name:</label>
+    <input type="text" name="l_name">
+    <label for="p_word">Your Password</label>
+    <input type="password" name="p_word">
+    <button>Submit</button>
+    </form>
+</body>
+</html>
