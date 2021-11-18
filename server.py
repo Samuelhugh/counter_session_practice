@@ -1,4 +1,5 @@
 from flask import Flask, render_template , request , redirect, session  # Render_template(s) is a Method (or a function), Request is a property or a Attribute, Redirect is a Method (or a function), Session is a Attribute or a Property.
+
 from env import key
 
 
